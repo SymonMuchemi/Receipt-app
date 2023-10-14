@@ -3,4 +3,7 @@
     <string name="MILK" />
     <string name="milk">MILK</string>
     <string name="item">ITEM</string>
+    <string name="actual_price">ACTUAL PRICE</string>
+    <string name="price">PRICE</string>
+    <string name="_100_00">100.00</string>
 </resources>

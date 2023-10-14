@@ -3,8 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity"
+    android:background="@drawable/custom_background"
+    android:layout_margin="5dp"
     >
 
     <LinearLayout
@@ -19,10 +21,12 @@
         android:gravity="top">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/items_buttons_layout"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -34,21 +38,32 @@
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#235EA6"
                 android:background="@drawable/custom_button"
                 android:text="@string/milk"
-                />
+                android:padding="2dp"
+                android:textSize="15sp"
+                android:layout_marginBottom="5dp"/>
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="#235EA6"
+                android:padding="2dp"
                 android:text="SUGAR"/>
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="FLOUR"/>
+                android:padding="2dp"
+                android:text="FLOUR"
+                android:background="@drawable/custom_button"
+                />
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:padding="2dp"
                 android:text="BREAD"/>
         </LinearLayout>
 
@@ -56,34 +71,46 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PRICE"
+                android:text="@string/price"
                 android:textStyle="bold"
                 android:layout_marginBottom="10dp"
-
                 />
 
-            <EditText
+            <TextView
+                android:id="@+id/milk_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="15sp"
+                android:background="@drawable/custom_background"
+                android:padding="2dp"
+                android:text="@string/_100_00"
+                />
+            <TextView
+                android:id="@+id/sugar_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minHeight="48dp"
-                android:text="MILK" />
-            <Button
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_background"
+                android:padding="10dp"
+                android:text="@string/_100_00"/>
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SUGAR"/>
-            <Button
+                android:text="@string/_100_00"/>
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="FLOUR"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="BREAD"/>
+                android:text="@string/_100_00"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -100,19 +127,19 @@
 
                 />
 
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="MILK"/>
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SUGAR"/>
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="FLOUR"/>
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="BREAD"/>
@@ -126,25 +153,24 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ACTUAL PRICE"
+                android:text="@string/actual_price"
                 android:textStyle="bold"
                 android:layout_marginBottom="10dp"
-
                 />
 
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="MILK"/>
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SUGAR"/>
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="FLOUR"/>
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="BREAD"/>
