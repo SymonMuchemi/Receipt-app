@@ -27,17 +27,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ITEM"
+                android:text="@string/item"
                 android:textStyle="bold"
                 android:layout_marginBottom="10dp"
                 />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="MILK"
-                app:cornerRadius="@android:dimen/dialog_min_width_minor"
-                app:rippleColor="#3F76B5" />
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_button"
+                android:text="@string/milk"
+                />
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -70,7 +70,8 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="MILK"/>
+                android:minHeight="48dp"
+                android:text="MILK" />
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
